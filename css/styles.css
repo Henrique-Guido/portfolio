@@ -1,0 +1,161 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* header and navbar */
+header {
+    max-width: 100%;
+    background-color: #000;
+    padding: 5px 60px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+
+.navbar-container nav a:hover {
+    color: #777777;
+}
+
+/* main content */
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+
+#info {
+    text-transform: uppercase;
+ 
+}
+
+#info h1 {
+    font-size: 3.5rem;
+}
+
+#info h3 {
+    text-transform: lowercase;
+}
+
+.main-container img {
+    width: 32%;
+    border-radius: 170px;
+}
+
+/* about me */
+.about-container {
+    height: 100vh;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-title {
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.about-box p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.icons-box{
+    padding-top: 60px;
+}
+
+.icons-box a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    transition: 0.5s;
+    margin: 0 15px;
+}
+
+.icons-box a:hover {
+    color: #777777;
+}
+
+/* projects */
+.projects-container {
+    height: 100vh;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects-title {
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.projects-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    max-width: 23%;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 85%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.project-card a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
