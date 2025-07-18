@@ -89,6 +89,7 @@ html {
     font-size: 1.1rem;
     margin-top: 2rem;
     color: #B3B3B3;
+    text-align: center;
 }
 
 .greenBtn {
@@ -116,7 +117,7 @@ html {
 .articleContainer {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
 }
 
 .articleContent {
@@ -312,4 +313,120 @@ footer {
 
 .footerCopy p strong {
     color: #000;
+}
+
+/* -------------------- */
+/*     tablets 768px    */
+/* -------------------- */
+@media screen and (max-width: 768px){
+    
+    #header {
+        padding: .8rem 2rem;
+    }
+
+    .headerNav {
+        display: none;
+    }
+
+    .mainHeroBanner img {
+        width: 18rem;
+    }
+
+    .articleContent i {
+        font-size: 4rem;
+    }
+
+    .articleContent h4 {
+        font-size: 1.2rem;
+    }
+
+    .aboutContainer {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .aboutBox1 {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .aboutBox2 {
+        max-width: 100%;
+    }
+
+    .aboutBox2 img {
+        width: 14rem;
+    }
+
+    .portfolioContainer {
+        padding: 2rem;
+    }
+
+    .portfolioBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contactContainer {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+}
+
+/* -------------------- */
+/*     mobile 768px     */
+/* -------------------- */
+@media screen and (max-width: 480px) {
+
+    .mainHeroBanner {
+        padding: 2rem;
+    }
+
+    .mainHeroBanner img {
+        width: 16rem;
+    }
+
+    #mainTitle {
+        font-size: 2rem;
+    }
+
+    #mainSubtitle {
+        font-size: 1.6rem;
+    }
+
+    .articleContainer {
+        padding: 1rem 2rem;
+        justify-content: space-between;
+    }
+    
+    .articleContent i {
+        font-size: 3rem;
+    }
+
+    .articleContent h4 {
+        font-size: 1rem;
+    }
+
+    .aboutBox2 img {
+        width: 8rem;
+    }
+
+    .contactBox {
+        justify-content: space-between;
+    }
+
+    .contactBox a {
+        margin: 0;
+    }
+
+    .contactBox a i{
+        font-size: 5rem;
+        margin: 0;
+    }
+
 }
