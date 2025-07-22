@@ -35,10 +35,6 @@ html {
     transition: .2s ease-in-out;
 }
 
-.headerLogo:hover {
-    transform: scale(1.1);
-}
-
 .headerNav a {
     color: #fff;
     text-decoration: none;
@@ -49,6 +45,14 @@ html {
 
 .headerNav a:hover {
     transform: scale(1.1) ;
+}
+
+.toggleMenu {
+    display: none;
+}
+
+.toggleMenuNav {
+    display: none;
 }
 
 .mainContainer {
@@ -316,9 +320,9 @@ footer {
 }
 
 /* -------------------- */
-/*     tablets 768px    */
+/*     tablets 810px    */
 /* -------------------- */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 810px){
     
     #header {
         padding: .8rem 2rem;
@@ -326,6 +330,38 @@ footer {
 
     .headerNav {
         display: none;
+    }
+
+    .toggleMenu {
+        display: flex;
+        background-color: #1DB954;
+        font-size: 1.2rem;
+        padding: .5rem;
+        border-radius: 20%;
+    }
+
+    .toggleMenuNav {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        background-color: rgba(0, 0, 0, .9);
+        min-width: 70%;
+        position: fixed;
+        top: 5rem;
+        right: 0;
+    }
+
+    .toggleMenuNav ul {
+        min-height: 80vh;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .toggleMenuNav ul li a {
+        text-decoration: none;
     }
 
     .mainHeroBanner img {
@@ -379,12 +415,16 @@ footer {
 }
 
 /* -------------------- */
-/*     mobile 768px     */
+/*     mobile 480px     */
 /* -------------------- */
 @media screen and (max-width: 480px) {
 
     .mainHeroBanner {
         padding: 2rem;
+    }
+
+    .mainContainer {
+        min-height: 80vh;
     }
 
     .mainHeroBanner img {
