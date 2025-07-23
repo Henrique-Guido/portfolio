@@ -12,3 +12,13 @@ toggleMenu.addEventListener('click', () => {
     }
 
 })
+
+let linkSelect = document.querySelectorAll('.mobileLink')
+
+linkSelect.forEach((btn) => {
+
+    btn.addEventListener('click', () => {
+        toggleMenuNav.style.display = 'none'
+    })
+
+})

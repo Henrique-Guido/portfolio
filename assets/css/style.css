@@ -151,7 +151,7 @@ html {
 }
 
 .aboutBox1 {
-    max-width: 40%;
+    max-width: 55%;
 }
 
 .aboutTitle {
@@ -166,6 +166,11 @@ html {
     text-align: justify;
     line-height: 2.5rem;
     border-top: 2px solid #1DB954;
+    margin-bottom: 2rem;
+}
+
+.noBorder {
+    border: none;
 }
 
 .aboutSocialIcons {
@@ -188,7 +193,7 @@ html {
 }
 
 .aboutBox2 img {
-    width: 230px;
+    width: 13rem;
     border-radius: 50%;
 }
 
@@ -235,6 +240,12 @@ html {
     color: #B3B3B3;
     font-size: 1.3rem;
     margin-top: .5rem;
+}
+
+.portfolioCardTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1DB954;
 }
 
 /* contact */
@@ -325,7 +336,8 @@ footer {
 @media screen and (max-width: 810px){
     
     #header {
-        padding: .8rem 2rem;
+        padding: .5rem 2rem;
+        background-color: #000;
     }
 
     .headerNav {
@@ -368,6 +380,19 @@ footer {
         width: 18rem;
     }
 
+    #mainTitle {
+        font-size: 2.5rem;
+    }
+
+    .articleContainer {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .articleContent {
+        max-width: 8rem;
+    }
+
     .articleContent i {
         font-size: 4rem;
     }
@@ -384,6 +409,10 @@ footer {
     .aboutBox1 {
         max-width: 100%;
         margin-bottom: 2rem;
+    }
+
+    .aboutText {
+        font-size: 1.1rem;
     }
 
     .aboutBox2 {
@@ -404,8 +433,20 @@ footer {
         gap: 2rem;
     }
 
+    .portfolioText {
+        font-size: 1.1rem;
+    }
+
+    .portfolioCard p {
+        font-size: 1.1rem;
+    }
+
     .contactContainer {
         padding: 2rem;
+    }
+
+    .contactText {
+        font-size: 1.1rem;
     }
 
     footer {

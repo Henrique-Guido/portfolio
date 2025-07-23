@@ -8,6 +8,10 @@
     <meta name="robots" content="index, follow">
     <title>Henrique Guido - Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- javascript -->
+    <script src="assets/js/toggle-menu.js" defer></script>
+    <script src="assets/js/subtitle-effect.js" defer></script>
+    <script src="https://kit.fontawesome.com/035184f79b.js" defer crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- header -->
@@ -26,21 +30,21 @@
             </div>
             <div class="toggleMenuNav" id="toggleMenuNav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a class="mobileLink" href="#home">Home</a></li>
+                    <li><a class="mobileLink" href="#about">Sobre</a></li>
+                    <li><a class="mobileLink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="mobileLink" href="#contact">Contato</a></li>
                 </ul>
             </div>
         </header>
     <!-- main -->
     <section id="home" class="mainContainer">
         <main class="mainHeroBanner">
-            <img src="assets/images/henrique-guido-perfil.jpg" alt="Henrique Guido - Desenvolvedor Full Stack" width="280">
+            <img src="assets/images/perfil-main.jpg" alt="Henrique Guido - Desenvolvedor Full Stack" width="280">
             <h1 id="mainTitle">Henrique Guido</h1>
             <h2 id="mainSubtitle"></h2>
             <p class="mainDescription">O seu trabalho merece um site! Potencialize seu negócio com visibilidade online.</p>
-            <a href="https://wa/me/11917048978" class="greenBtn">Entre em Contato</a>
+            <a href="https://wa.me/11917048978" target="_blank" class="greenBtn">Entre em Contato</a>
         </main>
         <div class="wrapperContainer-gray">
             <div class="articleContainer">
@@ -64,8 +68,8 @@
         <div class="aboutContainer">
             <div class="aboutBox1">
                 <p class="aboutTitle">Quem Sou Eu?</p>
-                <p class="aboutText">Sou desenvolvedor full stack com experiência no desenvolvimento de aplicações web utilizando HTML, CSS, JavaScript e ReactJS no front-end, sempre buscando criar interfaces responsivas, acessíveis e com boa usabilidade. No back-end, atuo com PHP, integrando sistemas com banco de dados, criando APIs e desenvolvendo soluções personalizadas de forma segura e eficiente.
-                Além do desenvolvimento web, possuo conhecimentos sólidos em Linux, o que me permite trabalhar com servidores, automações de tarefas, deploys, configuração de ambientes e análise de logs. Essa base sólida em sistemas Linux complementa minha atuação como desenvolvedor, garantindo maior autonomia e entendimento completo da infraestrutura por trás das aplicações que construo.</p>
+                <p class="aboutText">Sou desenvolvedor full stack com experiência no desenvolvimento de aplicações web utilizando HTML, CSS, JavaScript e ReactJS no front-end, sempre buscando criar interfaces responsivas, acessíveis e com boa usabilidade. No back-end, atuo com PHP, integrando sistemas com banco de dados, criando APIs e desenvolvendo soluções personalizadas de forma segura e eficiente.</p>
+                <p class="aboutText noBorder">Além do desenvolvimento web, possuo conhecimentos sólidos em Linux, o que me permite trabalhar com servidores, automações de tarefas, deploys, configuração de ambientes e análise de logs. Essa base sólida em sistemas Linux complementa minha atuação como desenvolvedor, garantindo maior autonomia e entendimento completo da infraestrutura por trás das aplicações que construo.</p>
                 <a href="https://www.linkedin.com/in/henrique-guido/" target="_blank" class="aboutSocialIcons">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
@@ -78,9 +82,9 @@
             </div>
             <div class="aboutBox2">
                 <img src="assets/images/henrique-guido-perfil.jpg" alt="Henrique Guido">
-                <img src="assets/images/henrique-guido-perfil.jpg" alt="Henrique Guido">
-                <img src="assets/images/henrique-guido-perfil.jpg" alt="Henrique Guido">
-                <img src="assets/images/henrique-guido-perfil.jpg" alt="Henrique Guido">
+                <img src="assets/images/web-development-about.png" alt="Henrique Guido">
+                <img src="assets/images/security-about.png" alt="Henrique Guido">
+                <img src="assets/images/tux-about.png" alt="Henrique Guido">
             </div>
         </div>
     </section>
@@ -92,19 +96,19 @@
             <div class="portfolioBox">
                 <article class="portfolioCard">
                     <img src="assets/images/portfolio-cardapio-digital.png" alt="Sistema de cardápio digiral">
-                    <p>Cardápio Digital</p>
+                    <span class="portfolioCardTitle">Cardápio Digital</span>
+                    <p>Cardápio digital de um restaurante fictício com ações de CRUD.</p>
+                    <a href="https://github.com/Henrique-Guido/sistema_cardapio" class="greenBtn">Github</a>
+                </article>
+                <article class="portfolioCard">
+                    <img src="assets/images/portfolio-cardapio-digital.png" alt="Sistema de cardápio digiral">
+                    <span class="portfolioCardTitle">Cardápio Digital</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     <a href="https://github.com/Henrique-Guido/sistema_cardapio" class="greenBtn">Github</a>
                 </article>
                 <article class="portfolioCard">
                     <img src="assets/images/portfolio-cardapio-digital.png" alt="Sistema de cardápio digiral">
-                    <p>Cardápio Digital</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <a href="https://github.com/Henrique-Guido/sistema_cardapio" class="greenBtn">Github</a>
-                </article>
-                <article class="portfolioCard">
-                    <img src="assets/images/portfolio-cardapio-digital.png" alt="Sistema de cardápio digiral">
-                    <p>Cardápio Digital</p>
+                    <span class="portfolioCardTitle">Cardápio Digital</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
                     <a href="https://github.com/Henrique-Guido/sistema_cardapio" class="greenBtn">Github</a>
                 </article>
@@ -148,8 +152,5 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/toggle-menu.js"></script>
-    <script src="assets/js/subtitle-effect.js"></script>
-    <script src="https://kit.fontawesome.com/035184f79b.js" crossorigin="anonymous"></script>
 </body>
 </html>
