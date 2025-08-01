@@ -195,6 +195,11 @@ html {
 .aboutBox2 img {
     width: 13rem;
     border-radius: 50%;
+    transition: .3s;
+}
+
+.aboutBox2 img:hover {
+    transform: scale(1.1) rotate(10deg);
 }
 
 /* portfolio */
