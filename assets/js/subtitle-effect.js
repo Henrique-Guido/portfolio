@@ -1,4 +1,4 @@
-let text = "Desenvolvedor Full Stack_"
+let text = "Profissional DevOps_"
 const mainSubtitle = document.getElementById('mainSubtitle')
 
 let i = 0
